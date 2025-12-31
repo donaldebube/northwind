@@ -1,0 +1,67 @@
+version: 2
+
+sources:
+  - name: northwind_raw
+    database: NORTHWIND_DB
+    schema: SOURCE
+    
+    tables:
+      - name: customer
+        identifier: "`DL_NORTHWIND.CUSTOMER`"
+        
+      - name: employees
+        identifier: "`DL_NORTHWIND.EMPLOYEES`"
+        
+      - name: employee_privileges
+        identifier: "`DL_NORTHWIND.EMPLOYEE_PRIVILEGES`"
+        
+      - name: inventory_transactions
+        identifier: "`DL_NORTHWIND.INVENTORY_TRANSACTIONS`"
+        
+      - name: inventory_transaction_types
+        identifier: "`DL_NORTHWIND.INVENTORY_TRANSACTION_TYPES`"
+        
+      - name: invoices
+        identifier: "`DL_NORTHWIND.INVOICES`"
+        
+      - name: orders_status
+        identifier: "`DL_NORTHWIND.ORDERS_STATUS`"
+        
+      - name: orders_tax_status
+        identifier: "`DL_NORTHWIND.ORDERS_TAX_STATUS`"
+        
+      - name: orders
+        identifier: "`DL_NORTHWIND.ORDERS`"
+        
+      - name: order_details_status
+        identifier: "`DL_NORTHWIND.ORDER_DETAILS_STATUS`"
+        
+      - name: order_details
+        identifier: "`DL_NORTHWIND.ORDER_DETAILS`"
+        
+      - name: privileges
+        identifier: "`DL_NORTHWIND.PRIVILEGES`"
+        
+      - name: products
+        identifier: "`DL_NORTHWIND.PRODUCTS`"
+        
+      - name: purchase_orders
+        identifier: "`DL_NORTHWIND.PURCHASE_ORDERS`"
+        
+      - name: purchase_order_details
+        identifier: "`DL_NORTHWIND.PURCHASE_ORDER_DETAILS`"
+        
+      - name: purchase_order_status
+        identifier: "`DL_NORTHWIND.PURCHASE_ORDER_STATUS`"
+        
+      - name: sales_reports
+        identifier: "`DL_NORTHWIND.SALES_REPORTS`"
+        
+      - name: shippers
+        identifier: "`DL_NORTHWIND.SHIPPERS`"
+        
+      - name: strings
+        identifier: "`DL_NORTHWIND.STRINGS`"
+        
+      - name: suppliers
+        identifier: "`DL_NORTHWIND.SUPPLIERS`"
