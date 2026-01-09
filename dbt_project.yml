@@ -24,6 +24,14 @@ clean-targets:
 # Configuring models
 models:
   my_new_project_1:
+
     staging:  # ← Fixed: 4 spaces (not 6)
-      +schema: SOURCE
+      +enabled: true
+      #+schema: SOURCE
+      +schema: staging_northwind
       +materialized: view
+
+    warehouse:  # ← Fixed: 4 spaces (not 6)
+      +enabled: true
+      +schema: dwh_northwind
+      +materialized: table
