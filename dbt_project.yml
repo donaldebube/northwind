@@ -33,5 +33,7 @@ models:
 
     warehouse:  # ← Fixed: 4 spaces (not 6)
       +enabled: true
-      +schema: dwh_northwind
       +materialized: table
+      +schema: dwh_northwind
+      dim_date:
+        +materialized: view # this makes sure to make only the dim_date table a view in the warehouse folder
