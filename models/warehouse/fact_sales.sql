@@ -1,3 +1,12 @@
+
+
+{{
+    config(
+        materialized='table',
+        cluster_by=['order_date']
+    )
+}}
+
 WITH source AS (
     SELECT 
         od.order_id,
